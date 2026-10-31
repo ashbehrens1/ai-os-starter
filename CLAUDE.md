@@ -98,6 +98,24 @@ In the Claude app, Project files are read-only to Claude, so setup, ingest and l
 the updated page text for {OS_OWNER} to save and re-upload. In Claude Code they edit the files
 directly.
 
+## Saving and sharing (git)
+
+In Claude Code, when someone asks you to save, share, update or "push" their changes, do the git
+steps for them:
+
+1. Pull the latest first (`git pull`) so you start from everyone's current pages.
+2. Make the change on a branch named for it, like `ingest-acme-call`, never straight on `main`.
+   The owner's small fixes (a typo, a date) are the one exception, and only if they ask.
+3. Commit with a short message that says what changed, like "Add call notes for Acme".
+4. Push the branch and open a pull request (`gh pr create` if GitHub CLI is set up; otherwise give
+   the person the link GitHub prints). Say in the pull request what changed and which sources it
+   came from.
+5. Tell the person what you did in two or three lines, with the pull request link.
+
+Never force-push, never delete branches or files without being asked, and never merge a pull
+request yourself. Only {OS_OWNER} merges. If git asks for a login or something fails, stop and
+tell the person what it said instead of trying workarounds.
+
 ## Rules
 
 - Never invent client names, prices, dates or facts.

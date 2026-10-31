@@ -15,6 +15,18 @@ You don't need to remember git commands. Every step below has a button in VS Cod
 Desktop. And if you're stuck, ask Claude: "Walk me through pulling the latest AI OS, step by
 step."
 
+## The easy way: ask Claude
+
+If you use Claude Code, you don't have to run any of the steps below yourself. `CLAUDE.md` tells
+Claude how to do them. Say it in plain words:
+
+- "Pull the latest AI OS."
+- "Save and share my changes." Claude makes a branch, commits, pushes and opens the pull request.
+- "I'm done with this. What do I need to do next?"
+
+Read what Claude says it did, and check the pull request link it gives you. The rest of this page
+is what's happening underneath, and what to click if you'd rather do it by hand.
+
 ## Who edits what
 
 | Who | Does | How |
