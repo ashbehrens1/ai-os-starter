@@ -16,6 +16,15 @@ If the templates aren't available (a plain chat with no files), use the section 
 `CLAUDE.md` § Page shapes. If `CLAUDE.md` isn't available either, ask the owner to add the AI OS
 files before starting.
 
+## Step 0: Where am I?
+
+Check you're inside an AI OS repo: a `CLAUDE.md` whose first heading ends in "AI OS" and has the
+Layout and Page shapes sections, plus a `wiki/` folder. If you're in Claude Code and that isn't
+here (an empty folder, or some other project), don't start the interview. Do Phase 0 from
+`START-HERE.md` first to get their copy of the repo. If `START-HERE.md` isn't on disk, fetch
+`https://raw.githubusercontent.com/ashbehrens1/ai-os-starter/main/START-HERE.md`. Then come back
+here.
+
 ## Where you're running
 
 Work this out before the first question and say it in one line.
@@ -96,13 +105,18 @@ section of `company.md`.
    bullets for the pages written and how many `NOT GIVEN` gaps are left.
 5. **Report back** in one short list: pages written, the `NOT GIVEN` gaps grouped by page (most
    important first: prices, stages, "qualified"), and any placeholder tokens still left.
-6. **Next steps for the owner:**
-   - Read the pages. Fix anything that's wrong; this is your team's source of truth now.
-   - Try it: "Run /call-prep for [one of the clients you gave me]."
-   - In Claude Code, suggest the first save to GitHub and offer to run it:
-     `git add -A`, `git commit -m "Set up the AI OS"`, `git push`. Then point to
-     `TEAM-WORKFLOW.md` for how the team works with it.
-   - For the team's Claude Project, point to `HOW-TO-LOAD.md`.
+6. **Ask them to read the pages.** Fix anything that's wrong before saving; this is the team's
+   source of truth now.
+7. **Save the first version (Claude Code only).** For the very first setup, commit straight to
+   `main` and push. It's their own private repo and nobody else is working in it yet, so a
+   branch and pull request would only add steps. Say that in one line and ask before running:
+   `git add -A`, `git commit -m "Set up the AI OS"`, `git push`. If there's no GitHub remote
+   (the local-only copy), commit and skip the push. After this first save, changes go on a
+   branch with a pull request, as `CLAUDE.md` § Saving and sharing says. If you're re-running
+   setup on a repo that already has commits from others, use a branch.
+8. **Hand off to the tour.** Say "Want a quick tour of how to use it?" and, on a yes, follow
+   `.claude/skills/tour/SKILL.md`. In a claude.ai chat or Project, do the tour from the pages
+   you just wrote, then point to `HOW-TO-LOAD.md` for the team's Claude Project.
 
 ## Rules
 

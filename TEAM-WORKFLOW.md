@@ -42,15 +42,26 @@ to the owner, who runs `/ingest`.
 
 ## One-time setup
 
-1. Accept the GitHub invite the owner sends you.
-2. Get a copy on your computer (this is called **cloning**):
+1. Accept the GitHub invite the owner sends you (it comes by email, or shows up on github.com).
+2. **The easy way:** make an empty folder that isn't synced by iCloud or OneDrive (for example
+   `~/Developer`), open Claude Code there, and paste the prompt below with the repo's address
+   filled in. The owner can give you the address, or a copy of the prompt with it filled in.
+
+   > Join my team's AI OS. The repo is {REPO_URL}. Get a copy on this computer in a folder that isn't synced by iCloud, open it, and walk me through how to use it.
+
+   Claude gets the copy, asks before it installs anything, and gives you the tour. If you're not
+   logged in to GitHub on this computer yet, it helps you log in (a browser window opens).
+3. **By hand, if you'd rather:** get a copy on your computer (this is called **cloning**) into a
+   folder that isn't synced by iCloud:
    - **VS Code:** open the Source Control panel (the branch-shaped icon on the left) and click
      **Clone Repository**. Paste the repo's URL from GitHub (green **Code** button), pick a
      folder, then click **Open**.
    - **GitHub Desktop:** **File > Clone repository**, pick the AI OS repo from the list, choose a
      folder, **Clone**.
    - **Terminal:** `git clone <repo URL>`
-3. If you use Claude Code, open that folder in it. The skills show up as `/call-prep` and so on.
+
+   Then open that folder in Claude Code. The skills show up as `/call-prep` and so on, and
+   `/tour` explains the rest.
 
 ## Every day: pull before you start
 

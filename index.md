@@ -40,7 +40,7 @@ same sections. `log.md` records every change.
 `wiki/entities/people/_person-template.md`, `wiki/sources/_source-template.md`.
 
 ## Skills
-In `.claude/skills/`. Setup: `setup-os`. Sales: `call-prep`, `post-call-debrief`,
+In `.claude/skills/`. Setup: `setup-os`, `tour`. Sales: `call-prep`, `post-call-debrief`,
 `account-brief`. Upkeep: `ingest`, `lint`.
 
 ## Connectors

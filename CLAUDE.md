@@ -21,7 +21,7 @@ timezone is {TIMEZONE}. {SALES_MANAGER} runs the pipeline and gets the Monday pi
 | Map | `index.md`, `log.md` | Catalog of every page; append-only record of changes | Claude, during setup, ingest and lint |
 | Sources | `raw/` | Call transcripts, CRM exports, datasets, example emails. Never edited | Anyone drops files in |
 | Knowledge base | `wiki/` | One page per client, prospect and person, plus company, offers, playbooks and brand | Claude, from sources; {OS_OWNER} approves |
-| Skills | `.claude/skills/` | The jobs we repeat, one `SKILL.md` each | {OS_OWNER} |
+| Skills | `.claude/skills/` | The jobs we repeat, one `SKILL.md` each: setup-os, tour, call-prep, post-call-debrief, account-brief, ingest, lint | {OS_OWNER} |
 | Connectors | `connectors/` | Which live tools are connected, what each may read and write | {OS_OWNER} |
 | Agents | `agents/` | Scheduled jobs and their prompts | {OS_OWNER} |
 
@@ -99,6 +99,13 @@ the updated page text for {OS_OWNER} to save and re-upload. In Claude Code they 
 directly.
 
 ## Saving and sharing (git)
+
+**Getting a copy.** When someone asks to join or set up the AI OS, get the repo into a folder
+that isn't synced by iCloud or OneDrive (not under `~/Desktop` or `~/Documents` on a Mac; git
+can hang there). The owner's first setup creates a private repo from the template, as
+`START-HERE.md` Part 2 says. A teammate's copy is a clone: `gh repo clone <repo>`, or
+`git clone <URL>`. Ask before installing anything. Then open the folder and run the `tour`
+skill.
 
 In Claude Code, when someone asks you to save, share, update or "push" their changes, do the git
 steps for them:

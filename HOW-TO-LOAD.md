@@ -46,7 +46,7 @@ Not uploaded: `log.md`, `agents/`, `tools/`, the git guides, and the templates.
 ## 2. Skills (organization-wide)
 
 An Owner uploads skills under **Organization settings > Library**. Upload each zip in
-`dist/skills/`: call-prep, post-call-debrief, account-brief, ingest, lint and setup-os.
+`dist/skills/`: setup-os, tour, call-prep, post-call-debrief, account-brief, ingest and lint.
 
 - On Team, owner-uploaded skills are available to everyone and on by default. People can switch
   individual ones off. Targeting a skill at one group is Enterprise only.

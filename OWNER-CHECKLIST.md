@@ -3,9 +3,10 @@
 # Owner checklist
 
 ## Once, at the start
-- [ ] Use this template on GitHub, set the repo to **Private**, clone it.
-- [ ] Run `/setup-os`. Read every page it wrote and fix what's wrong.
-- [ ] Commit and push. Invite the people who'll edit it.
+- [ ] Ask Claude Code to set up your AI OS (the prompt in `START-HERE.md`). It makes your
+      private repo and runs `/setup-os`. Read every page it wrote and fix what's wrong.
+- [ ] Let Claude save the first version to GitHub, then take the `/tour`. Invite the people
+      who'll edit it (Claude can send the GitHub invites if you ask).
 - [ ] Add a branch rule on `main` that requires a pull request (repo Settings).
 - [ ] Build the bundle and set up the shared Claude Project, skills, CRM connector and both
       scheduled tasks (`HOW-TO-LOAD.md`).
