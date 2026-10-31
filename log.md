@@ -7,3 +7,4 @@ Entry format: `## [YYYY-MM-DD] <operation> | <what>` then a few bullets naming t
 ## [start] init | Created from the AI OS Starter template
 
 - Empty template. No company facts yet. Run `/setup-os` to fill it in.
+- 2026-11-02 | ingest | Added client page: Brightwater Dental (example).
